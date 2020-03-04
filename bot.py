@@ -39,7 +39,6 @@ async def DB(SQL):
 #SQL文をdiscordから実行
 @bot.command()
 async def sql(ctx,*,SQL):
-    member = ctx.message.author.id
     msg = await DB(SQL)
     await ctx.send(msg)
     
