@@ -23,6 +23,7 @@ print('port = ' + str(port))
 print('password = ' + str(password))
 #DBに接続
 async def DB(SQL):
+    #printするときに使ったやつをついでにURLをそのままでもよし
     conn = await asyncpg.connect(
         host = host ,
         user = user, 
